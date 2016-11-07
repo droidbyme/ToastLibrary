@@ -96,7 +96,7 @@ ToastLib is Library for Customize Toast.
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen1.png)
  <br />
 
-**For Success Toast** <br /><br />
+**For Success Toast** <br />
 ToastLib.success(this, "Success", Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"));
  <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen2.png)
