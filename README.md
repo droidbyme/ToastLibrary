@@ -74,6 +74,7 @@ ToastLib is Library for Customize Toast.
 
 **Usage**
 <br />
+**For Custom Toast** <br />
  new ToastLib.Builder(this, "Login Success")<br />
                  &emsp;&emsp;&emsp;.duration(ToastEnum.SHORT)<br />
                  &emsp;&emsp;&emsp;.backgroundColor(ContextCompat.getColor(this, R.color.green))<br />
@@ -92,24 +93,25 @@ ToastLib is Library for Customize Toast.
                  &emsp;&emsp;&emsp;.stroke(2, ContextCompat.getColor(this, R.color.dark_green))<br />
                  &emsp;&emsp;&emsp;.gravity(Gravity.BOTTOM)<br />
                  &emsp;&emsp;&emsp;.show();
-<br /> <br />
+<br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen1.png)
- <br />
+ <br /><br />
 
 **For Success Toast** <br />
 ToastLib.success(this, "Success", Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"));
  <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen2.png)
+<br /><br />
 
-**For Error Toast** <br /><br />
+**For Error Toast** <br />
 ToastLib.error(this, "Ooops! Try Again..", Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"));
 
  <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen3.png)
 
- <br />
- **For Loading/Progress Toast** <br /><br />
+ <br /><br />
+ **For Loading/Progress Toast** <br />
  ToastLib.progress(this, "Loading..", Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"));
  <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen4.png)
-<br />
+<br /><br />
