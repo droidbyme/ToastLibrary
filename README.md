@@ -48,9 +48,9 @@ ToastLib is Library for Customize Toast.
   <br /> 
   .**corner**(int radius)
   <br /> <br />
-  // margin from bottom/top (if Gravity is top then margin count from TOP and same for Bottom), default is 16
+  // margin from bottom/top (if Gravity is top then margin count from TOP and same for Bottom), default is 36
   <br /> 
-  .**margin**(int margin), default is 36
+  .**margin**(int margin)
   <br /> <br /> 
   // padding for inner content (default is 4)
   <br /> 
