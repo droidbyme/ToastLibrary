@@ -72,16 +72,16 @@ ToastLib is Library for Customize Toast.
   <br /> 
   .**show**()
 
-![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLib/master/screenshots/screen1.png)
+![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen1.png)
  <br />
 
-![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLib/master/screenshots/screen2.png)
+![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen2.png)
 
  <br />
-![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLib/master/screenshots/screen3.png)
+![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen3.png)
 
  <br />
-![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLib/master/screenshots/screen4.png)
+![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen4.png)
  <br /> <br />
 
  **Usage**
