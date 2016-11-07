@@ -75,23 +75,23 @@ ToastLib is Library for Customize Toast.
 **Usage**
 <br />
  new ToastLib.Builder(this, "Login Success")<br />
-                 &emsp;.duration(ToastEnum.SHORT)<br />
-                 .backgroundColor(ContextCompat.getColor(this, R.color.green))<br />
-                 .textColor(ContextCompat.getColor(this, R.color.black))<br />
-                 .textSize(18)<br />
-                 .typeface(Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"))<br />
-                 .isBold(true)<br />
-                 .icon(getString(R.string.fa_success))<br />
-                 .icon(R.drawable.ic_check_black_24dp)<br />
-                 .iconColor(ContextCompat.getColor(this, R.color.black))<br />
-                 .iconSize(24, 24)<br />
-                 .corner(8)<br />
-                 .margin(56)<br />
-                 .padding(36)<br />
-                 .spacing(16)<br />
-                 .stroke(2, ContextCompat.getColor(this, R.color.dark_green))<br />
-                 .gravity(Gravity.BOTTOM)<br />
-                 .show();
+                 &emsp;&emsp;&emsp;.duration(ToastEnum.SHORT)<br />
+                 &emsp;&emsp;&emsp;.backgroundColor(ContextCompat.getColor(this, R.color.green))<br />
+                 &emsp;&emsp;&emsp;.textColor(ContextCompat.getColor(this, R.color.black))<br />
+                 &emsp;&emsp;&emsp;.textSize(18)<br />
+                 &emsp;&emsp;&emsp;.typeface(Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"))<br />
+                 &emsp;&emsp;&emsp;.isBold(true)<br />
+                 &emsp;&emsp;&emsp;.icon(getString(R.string.fa_success))<br />
+                 &emsp;&emsp;&emsp;.icon(R.drawable.ic_check_black_24dp)<br />
+                 &emsp;&emsp;&emsp;.iconColor(ContextCompat.getColor(this, R.color.black))<br />
+                 &emsp;&emsp;&emsp;.iconSize(24, 24)<br />
+                 &emsp;&emsp;&emsp;.corner(8)<br />
+                 &emsp;&emsp;&emsp;.margin(56)<br />
+                 &emsp;&emsp;&emsp;.padding(36)<br />
+                 &emsp;&emsp;&emsp;.spacing(16)<br />
+                 &emsp;&emsp;&emsp;.stroke(2, ContextCompat.getColor(this, R.color.dark_green))<br />
+                 &emsp;&emsp;&emsp;.gravity(Gravity.BOTTOM)<br />
+                 &emsp;&emsp;&emsp;.show();
 <br /> <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen1.png)
  <br />
