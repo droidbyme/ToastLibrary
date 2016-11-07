@@ -73,24 +73,24 @@ ToastLib is Library for Customize Toast.
   .**show**()
 
 **Usage**
-<br /> <br />
- new ToastLib.Builder(this, "Login Success")
-                 .duration(ToastEnum.SHORT)
-                 .backgroundColor(ContextCompat.getColor(this, R.color.green))
-                 .textColor(ContextCompat.getColor(this, R.color.black))
-                 .textSize(18)
-                 .typeface(Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"))
-                 .isBold(true)
-                 .icon(getString(R.string.fa_success))
-                 .icon(R.drawable.ic_check_black_24dp)
-                 .iconColor(ContextCompat.getColor(this, R.color.black))
-                 .iconSize(24, 24)
-                 .corner(8)
-                 .margin(56)
-                 .padding(36)
-                 .spacing(16)
-                 .stroke(2, ContextCompat.getColor(this, R.color.dark_green))
-                 .gravity(Gravity.BOTTOM)
+<br />
+ new ToastLib.Builder(this, "Login Success")<br />
+                 .duration(ToastEnum.SHORT)<br />
+                 .backgroundColor(ContextCompat.getColor(this, R.color.green))<br />
+                 .textColor(ContextCompat.getColor(this, R.color.black))<br />
+                 .textSize(18)<br />
+                 .typeface(Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"))<br />
+                 .isBold(true)<br />
+                 .icon(getString(R.string.fa_success))<br />
+                 .icon(R.drawable.ic_check_black_24dp)<br />
+                 .iconColor(ContextCompat.getColor(this, R.color.black))<br />
+                 .iconSize(24, 24)<br />
+                 .corner(8)<br />
+                 .margin(56)<br />
+                 .padding(36)<br />
+                 .spacing(16)<br />
+                 .stroke(2, ContextCompat.getColor(this, R.color.dark_green))<br />
+                 .gravity(Gravity.BOTTOM)<br />
                  .show();
 <br /> <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen1.png)
