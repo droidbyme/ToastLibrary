@@ -96,19 +96,20 @@ ToastLib is Library for Customize Toast.
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen1.png)
  <br />
 
-**For Success Toast** <br />
+**For Success Toast** <br /><br />
 ToastLib.success(this, "Success", Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"));
- <br /> <br />
+ <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen2.png)
 
-**For Error Toast** <br />
+**For Error Toast** <br /><br />
 ToastLib.error(this, "Ooops! Try Again..", Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"));
- <br /> <br />
+
  <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen3.png)
 
  <br />
- **For Loading/Progress Toast** <br />
+ **For Loading/Progress Toast** <br /><br />
  ToastLib.progress(this, "Loading..", Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf"));
+ <br />
 ![alt tag](https://raw.githubusercontent.com/droidbyme/ToastLibrary/master/screenshots/screen4.png)
- <br /> <br />
+<br />
