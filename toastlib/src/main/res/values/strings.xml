@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Toast Lib</string>
+    <string name="fa_success">{fa-check}</string>
+    <string name="fa_error">{fa-exclamation-triangle}</string>
+    <string name="fa_spinner">{fa-refresh spin}</string>
+</resources>

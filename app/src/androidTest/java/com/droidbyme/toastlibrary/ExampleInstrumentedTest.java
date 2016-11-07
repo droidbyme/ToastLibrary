@@ -1,4 +1,4 @@
-package com.droidbyme.toastlib;
+package com.droidbyme.toastlibrary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
