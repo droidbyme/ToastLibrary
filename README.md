@@ -75,7 +75,7 @@ ToastLib is Library for Customize Toast.
 **Usage**
 <br />
  new ToastLib.Builder(this, "Login Success")<br />
-                 &nbsp;.duration(ToastEnum.SHORT)<br />
+                 &emsp;.duration(ToastEnum.SHORT)<br />
                  .backgroundColor(ContextCompat.getColor(this, R.color.green))<br />
                  .textColor(ContextCompat.getColor(this, R.color.black))<br />
                  .textSize(18)<br />
