@@ -1,33 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/parentLayout"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parentLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+    <Button
+        android:id="@+id/toast_btn"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/btn_divider"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/toast_btn"
+        android:layout_alignTop="@id/toast_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/toast_btn"
+        android:background="@color/black"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:src="@drawable/ic_check_black_24dp" />
+        android:src="@drawable/ic_check_black_24dp"/>
 
     <com.joanzapata.iconify.widget.IconTextView
         android:id="@+id/faTextView"
         android:layout_width="wrap_content"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
         android:text="{fa-android}"
-        android:layout_height="wrap_content" />
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="4dp"
+        android:layout_toLeftOf="@id/toast_btn"
+        android:layout_toRightOf="@id/faTextView"
         android:text="ds"
-        android:textSize="@dimen/textsize" />
-
-</LinearLayout>
+        android:textSize="@dimen/textsize"/>
+</RelativeLayout>
