@@ -11,8 +11,10 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +39,8 @@ public class ToastLib {
         TextView textView = (TextView) view.findViewById(R.id.textView);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
         IconTextView faTextView = (IconTextView) view.findViewById(R.id.faTextView);
+        Button actionButton = (Button) view.findViewById(R.id.toast_btn);
+        View actionButtonDivider = view.findViewById(R.id.btn_divider);
 
         textView.setText(builder.msg);
 
@@ -82,15 +86,32 @@ public class ToastLib {
 
         textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, builder.size);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams
-                ((int) (builder.width * scale + 0.5f), (int) (builder.height * scale + 0.5f));
+        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) imageView.getLayoutParams();
+        layoutParams.width = (int) (builder.width * scale + 0.5f);
+        layoutParams.height = (int) (builder.height * scale + 0.5f);
         imageView.setLayoutParams(layoutParams);
 
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(new LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) textView.getLayoutParams();
+        layoutParams.height = RelativeLayout.LayoutParams.WRAP_CONTENT;
+        layoutParams.width = RelativeLayout.LayoutParams.WRAP_CONTENT;
         params.setMargins((int) (scale * builder.spacing), 0, 0, 0);
         textView.setLayoutParams(params);
 
         view.setPadding(builder.padding, builder.padding, builder.padding, builder.padding);
+
+        //set the action button
+        if (builder.actionButtonName != null && builder.actonButtonClick != null) {
+            actionButtonDivider.setVisibility(View.VISIBLE);
+            actionButtonDivider.setAlpha(0.6f);
+
+            actionButton.setVisibility(View.VISIBLE);
+            actionButton.setText(builder.actionButtonName);
+            actionButton.setTextColor(builder.textColor);
+            actionButton.setOnClickListener(builder.actonButtonClick);
+        } else {
+            actionButtonDivider.setVisibility(View.GONE);
+            actionButton.setVisibility(View.GONE);
+        }
 
         // Create Toast
         Toast toast = new Toast(builder.context);
@@ -134,6 +155,8 @@ public class ToastLib {
         private int strokewidth = 0;
         private int strokeColor = 0;
         private int padding = 0;
+        private String actionButtonName;
+        private View.OnClickListener actonButtonClick;
         private String faString = "";
 
         public Builder(Context context, String msg) {
@@ -236,6 +259,13 @@ public class ToastLib {
         public Builder stroke(int strokewidth, int strokeColor) {
             this.strokewidth = strokewidth;
             this.strokeColor = strokeColor;
+            return this;
+        }
+
+        public Builder actionButton(String buttonName, View.OnClickListener clickListener) {
+            actionButtonName = buttonName;
+            actonButtonClick = clickListener;
+
             return this;
         }
     }
