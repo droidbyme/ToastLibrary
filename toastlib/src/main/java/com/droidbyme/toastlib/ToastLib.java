@@ -106,6 +106,7 @@ public class ToastLib {
 
             actionButton.setVisibility(View.VISIBLE);
             actionButton.setText(builder.actionButtonName);
+            actionButton.setTextColor(builder.textColor);
             actionButton.setOnClickListener(builder.actonButtonClick);
         } else {
             actionButtonDivider.setVisibility(View.GONE);
