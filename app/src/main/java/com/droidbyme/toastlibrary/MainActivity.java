@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         new ToastLib.Builder(this, "Hello").show();
 
-        new ToastLib.Builder(this, "Login Success 12345678902345678923456789034567890567890")
+        new ToastLib.Builder(this, "Login Success")
                 .duration(ToastEnum.SHORT)
                 .backgroundColor(ContextCompat.getColor(this, R.color.green))
                 .textColor(ContextCompat.getColor(this, R.color.black))
