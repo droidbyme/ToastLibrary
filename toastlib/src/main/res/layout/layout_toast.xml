@@ -12,7 +12,8 @@
         android:id="@+id/toast_btn"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:singleLine="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"/>
 
@@ -33,12 +34,14 @@
         android:id="@+id/imageView"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_centerVertical="true"
         android:src="@drawable/ic_check_black_24dp"/>
 
     <com.joanzapata.iconify.widget.IconTextView
         android:id="@+id/faTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_toRightOf="@id/imageView"
         android:text="{fa-android}"
         android:textColor="#FFFFFF"
@@ -48,6 +51,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="4dp"
         android:layout_toLeftOf="@id/toast_btn"
         android:layout_toRightOf="@id/faTextView"
